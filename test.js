@@ -43,3 +43,8 @@ function throwError(errorMsg) {
 }
 // void vs never
 // The void type can have undefined or null as a value where as never cannot have any value.
+// Type inference means the automatic detection of a variable’s data type by TypeScript, based on the value assigned to it.
+let username = "Hanzla";
+// ⤷ TypeScript infers: username is of type `string`
+// Type annotation  means You explicitly tell TypeScript what the type of a variable, parameter, or return value should be.
+let age = 21;
