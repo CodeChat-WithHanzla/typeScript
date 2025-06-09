@@ -48,3 +48,24 @@ let username = "Hanzla";
 // ⤷ TypeScript infers: username is of type `string`
 // Type annotation  means You explicitly tell TypeScript what the type of a variable, parameter, or return value should be.
 let age = 21;
+const user = {
+    name: "Hanzla",
+    age: 21
+};
+const products = [
+    { id: 1, name: "Chair" },
+    { id: 2, name: "Table" }
+];
+// Note that the name of above two interfaces are same so that will merge
+const categories = [
+    { id: "1e47jhttteert", name: "Pants" },
+    { id: "23rtyuttteert", name: "Shirts" }
+];
+let c;
+function abc(a) {
+    // function logic
+}
+const user1 = {
+    name: "Ali",
+    employeeId: 123
+};

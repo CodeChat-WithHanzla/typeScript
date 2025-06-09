@@ -54,3 +54,67 @@ let username = "Hanzla";
 
 // Type annotation  means You explicitly tell TypeScript what the type of a variable, parameter, or return value should be.
 let age: number = 21;
+
+// Interface
+// Used to define the structure of an object, usually for object types.
+interface User {
+  name: string;
+  age: number;
+  gender?: string;
+}
+
+const user: User = {
+  name: "Hanzla",
+  age: 21
+};
+// For Arrays
+interface Product {
+  id: number;
+  name: string;
+}
+const products: Product[] = [
+  { id: 1, name: "Chair" },
+  { id: 2, name: "Table" }
+];
+
+// Entending the Interfaces
+interface Admin extends User {
+  admin: boolean;
+}
+// Merging the Interfaces
+interface Category {
+  id: string;
+}
+interface Category {
+  name: string;
+}
+// Note that the name of above two interfaces are same so that will merge
+const categories: Category[] = [
+  { id: "1e47jhttteert", name: "Pants" },
+  { id: "23rtyuttteert", name: "Shirts" }
+];
+// Type alias
+type value = string | number | null;
+let c: value;
+function abc(a: value) {
+  // function logic
+}
+
+// Union :- the data type can be either ... separated by |
+type union = string | number | null;
+
+// Intersection types
+type Person = {
+  name: string;
+};
+
+type Employee = {
+  employeeId: number;
+};
+
+type Staff = Person & Employee;
+
+const user1: Staff = {
+  name: "Ali",
+  employeeId: 123
+};
